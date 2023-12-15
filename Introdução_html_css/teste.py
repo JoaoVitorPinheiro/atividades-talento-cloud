@@ -6,8 +6,11 @@
 
 lista_frutas = ['maçã', 'banana', 'pera']
 
-for i in range(1,5):
-    print(lista_frutas[i])
+
+lista_frutas.reverse()
+print(lista_frutas)
+# for i in range(1,5):
+#     print(lista_frutas[i])
 
 # Imprimirá:
 # maçã

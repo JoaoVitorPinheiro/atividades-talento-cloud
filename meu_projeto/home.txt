@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 linhas teste de texto
 segunda linha de texto
 linha escrita na main
+=======
+linhas escritas na outra branch
+>>>>>>> outra-branch

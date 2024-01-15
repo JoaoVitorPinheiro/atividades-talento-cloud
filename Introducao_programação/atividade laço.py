@@ -36,14 +36,14 @@ Escreva mais um cÃ³digo que resolva o mesmo problema, mas dessa vez usando o laÃ
 
 Como desafio, imprima eles em ordem decrescente (20, 19, 18...)
 '''
-# numero_andares = 21
-# for contador in range(20):
-#     numero_andares = numero_andares - 1 
-#     if (numero_andares == 13):
-#          continue
-#     if (numero_andares == 21):
-#         break
-#     print(numero_andares)
+numero_andares = 21
+for contador in range(20):
+    numero_andares = numero_andares - 1 
+    if (numero_andares == 13):
+         continue
+    if (numero_andares == 21):
+        break
+    print(numero_andares)
 
 numero_andares = 21
 while (numero_andares <= 21):

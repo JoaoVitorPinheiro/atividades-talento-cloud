@@ -1,64 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <meta charset='utf-8'>
-    <title>Cadastro de pessoas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recife - Marco Zero</title>
+</head>
 <body>
-  <div class="container-sm" >
-  <h3><i class="bi bi-people-fill"> </i>Cadastrar Pessoas</h3>
-  <div class="row">
-    <div class="col-3">
-    <form action="cadastrar" method="POST">
-        <div class="mb-3">
-          <label for="cpf" class="form-label">CPF</label>
-          <input type="text" class="form-control" id="cpf" name = "cpf">
-          </div>
-        <div class="mb-3">
-          <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome" name=nome>
-        </div>
-        <div class="mb-3">
-            <label for="dataNascimento" class="form-label">Data de Nascimento</label>
-            <input type="date" class="form-control" id="dataNascimento" name="dataNascimento">
-          </div>
-        <button type="submit" class="btn btn-primary"><i class="bi bi-pencil-square"> </i>Cadastrar</button>
-      </form>
-    </div>
-     <div class="col-3">
-       <p align="center">{{total}} pessoa(s) cadastradas</p>
-     </div> 
-    <h3>Pessoas Cadastradas</h3>
-      <table class="table table-hover">
-        
-          <tr align="center">
-              <th>CPF</th>
-              <th>Nome</th>
-              <th>Data de Nascimento</th>
-              <th>Acões</th>
-          </tr>
-        
-          {% for item in result %}
-          <tr align="center">
-            <td>{{ item["CPF"][:3] }}.{{ item["CPF"][3:6] }}.{{ item["CPF"][6:9] }}-{{ item["CPF"][9:] }}</td>
-            <td>{{ item["Nome"] }}</td>
-            <td>{{ item["DataNascimento"] }}</td>
-            <td>
-                <a class="btn btn-danger" href='/deletar/{{ item["CPF"] }}'>
-                    <i class="bi bi-trash"></i> Deletar
-                </a>
-                <a href='/atualizar/{{ item["CPF"] }}' class="btn btn-success">
-                    <i class="bi bi-arrow-clockwise"></i> Atualizar
-                </a>
-            </td>
-        </tr>
-          {% endfor %}
-      </table>
-    </div>
-    
-  </div>
-        
+  <header>
+    <span>Marco Zero</span>
+    <ul>
+      <li> História</li>
+      <li> Pontos Turisticos</li>
+    </ul>
+  </header>
+  <main>
+    <section>
+      <h1>História</h1>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ground_Zero_-_Recife_-_Pernambuco_-_Brazil%283%29.jpg/1280px-Ground_Zero_-_Recife_-_Pernambuco_-_Brazil%283%29.jpg" alt="Praça Rio Branco" width="500" height="500">
+      <p>
+        A Praça Rio Branco, também conhecida como Marco Zero, é um espaço público localizado no bairro do <strong> Recife </strong> da cidade homônima, capital de Pernambuco.
+        O local fica próximo ao Porto do Recife e abriga o Marco Zero da cidade do Recife (instalado em 31 de janeiro de 1938, pelo Automóvel Clube de Pernambuco). 
+        É deste marco que são feitas todas as medidas oficiais de distâncias rodoviárias locais. Oficialmente denominada de Praça Barão do Rio Branco, fica localizada na Av. Alfredo Lisboa conectada às ruas Marquês de Olinda, Rio Branco e Barbosa Lima.
+      </p>
+      <small>Fonte: <a href="https://pt.wikipedia.org/wiki/Pra%C3%A7a_Rio_Branco_(Recife)">https://pt.wikipedia.org/wiki/Pra%C3%A7a_Rio_Branco_(Recife)</a></small>
+    </section>
+
+    <section>
+      <h2>Pontos Turisticos</h2>
+      <h3>Marco Zero Recife: O ponto de partida para a história da cidade</h3>
+      <p>
+        Tesouro da capital pernambucana, o Marco Zero Recife é uma atração impossível de ignorar, tamanha sua importância histórica. 
+        Situado no coração da cidade, esse ponto de referência geográfica é muito mais do que um simples marco de concreto. 
+        Na verdade, é o ponto de partida para a história da cidade, o epicentro de sua evolução e uma testemunha silenciosa das transformações que moldaram o seu destino ao longo dos séculos. 
+      </p>
+
+      <h3>As atrações imperdíveis do Marco Zero Recife</h3>
+
+      <ul>
+        <li>
+          <h4>Paço do Frevo</h4>
+          <p>O Paço do Frevo é um espaço cultural dedicado à preservação e promoção do <strong>frevo, ritmo musical e dança típicos de Pernambuco</strong>, localizado nas proximidades do monumento.
+            Lá, os visitantes podem conhecer a história do frevo, assistir a apresentações ao vivo, participar de oficinas e vivenciar essa expressão cultural única</p>
+        </li>
+        <li>
+          <h4>Igreja de Nossa Senhora do Carmo</h4>
+          <p>Outro atrativo nas redondezas é a Igreja de Nossa Senhora do Carmo, construída no século XVIII e considerada obra-prima do barroco pernambucano.
+            Além da fachada suntuosa e do interior ricamente ornado, a igreja guarda obras de arte sacra inestimáveis em seu acervo.</p>
+        </li>
+        <li>
+          <h4>Museus</h4>
+          <p>Você também pode aprender um pouco mais da história local em um dos museus da região.
+            Esse é o caso do Museu Cais do Sertão, do Museu da Cidade do Recife, da Casa de Cultura de Pernambuco, do Instituto Ricardo Brennand e muitos outros.</p>
+        </li>
+      </ul>
+
+      <small>Fonte: <a href="https://www.passagenspromo.com.br/blog/marco-zero-recife-o-ponto-de-partida-para-a-historia-da-cidade/">https://www.passagenspromo.com.br/blog/marco-zero-recife-o-ponto-de-partida-para-a-historia-da-cidade/</a></small>
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li>Facebook</li>
+      <li>Instagram</li>
+    </ul>
+  </footer>
 </body>
 </html>

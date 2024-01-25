@@ -1,0 +1,6 @@
+label[href$=".org"] {
+    color: red;
+  }
+span {
+    background-color: rgb(244, 0, 41);
+  }

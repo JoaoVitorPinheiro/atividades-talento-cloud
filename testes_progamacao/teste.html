@@ -1,67 +1,372 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recife - Marco Zero</title>
-</head>
-<body>
-  <header>
-    <span>Marco Zero</span>
-    <ul>
-      <li> História</li>
-      <li> Pontos Turisticos</li>
-    </ul>
-  </header>
-  <main>
-    <section>
-      <h1>História</h1>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ground_Zero_-_Recife_-_Pernambuco_-_Brazil%283%29.jpg/1280px-Ground_Zero_-_Recife_-_Pernambuco_-_Brazil%283%29.jpg" alt="Praça Rio Branco" width="500" height="500">
-      <p>
-        A Praça Rio Branco, também conhecida como Marco Zero, é um espaço público localizado no bairro do <strong> Recife </strong> da cidade homônima, capital de Pernambuco.
-        O local fica próximo ao Porto do Recife e abriga o Marco Zero da cidade do Recife (instalado em 31 de janeiro de 1938, pelo Automóvel Clube de Pernambuco). 
-        É deste marco que são feitas todas as medidas oficiais de distâncias rodoviárias locais. Oficialmente denominada de Praça Barão do Rio Branco, fica localizada na Av. Alfredo Lisboa conectada às ruas Marquês de Olinda, Rio Branco e Barbosa Lima.
-      </p>
-      <small>Fonte: <a href="https://pt.wikipedia.org/wiki/Pra%C3%A7a_Rio_Branco_(Recife)">https://pt.wikipedia.org/wiki/Pra%C3%A7a_Rio_Branco_(Recife)</a></small>
-    </section>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bebidas</title>
+    <link rel="stylesheet" href="css/bebidas_pag.css" />
+    <style>* {
+      margin: 0;
+      padding: 0;
+  }
+  
+  
+  .nav-bar a {
+      color: black;
+      text-decoration: none;
+      font-weight: 650;
+      transition: 0.3s;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .nav-list a:hover {
+      opacity: 0.10;
+  }
+  
+  .nav-list a:active {
+      opacity: 0.10;
+  }
+  
+  .logo img {
+      margin-top: 5px;
+      width: 50px;
+  }
+  
+  .nav-bar nav {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background: #FFCD0D;
+      height: 8vh;
+      position: fixed;  
+      top: 0; 
+      width: 100%;      
+    }
+  
+  .nav-list {
+      list-style: none;
+      display: flex;
+  }
+  
+  .nav-list li {
+      letter-spacing: 3px;
+      margin-left: 32px;
+  }
+  
+  .cart-icon {
+      display: flex;
+      margin-left: 9vh;
+      width: 30px;
+      height: 30px;
+  }
+  
+  body {
+      padding-top: 8vh;
+  }
+  
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+  .card {
+      display: flex;
+      flex-wrap: wrap;
+      width: 200px;
+      margin: 10px;
+  }
+  
+  .card img {
+      width: 100%;
+      height: auto;
+    }</style>
+    
+  </head>
+  <body>
+    <div class="nav-bar">
+      <header>
+        <nav>
+          <a href="/" class="logo"><img src="img/Logo.png" alt="logo" /></a>
+          <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Cardápio</a></li>
+            <li><a href="/">Sobremesas</a></li>
+            <li><a href="/">Bebidas</a></li>
+            <li>
+              <a href="/"
+                ><img
+                  class="cart-icon"
+                  src="img/shopping-cart.png"
+                  alt="carrinho icon"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
-    <section>
-      <h2>Pontos Turisticos</h2>
-      <h3>Marco Zero Recife: O ponto de partida para a história da cidade</h3>
-      <p>
-        Tesouro da capital pernambucana, o Marco Zero Recife é uma atração impossível de ignorar, tamanha sua importância histórica. 
-        Situado no coração da cidade, esse ponto de referência geográfica é muito mais do que um simples marco de concreto. 
-        Na verdade, é o ponto de partida para a história da cidade, o epicentro de sua evolução e uma testemunha silenciosa das transformações que moldaram o seu destino ao longo dos séculos. 
-      </p>
+    <main>
+        <h1>Bebidas e Drinks</h1>
+      <div class="row">
 
-      <h3>As atrações imperdíveis do Marco Zero Recife</h3>
 
-      <ul>
-        <li>
-          <h4>Paço do Frevo</h4>
-          <p>O Paço do Frevo é um espaço cultural dedicado à preservação e promoção do <strong>frevo, ritmo musical e dança típicos de Pernambuco</strong>, localizado nas proximidades do monumento.
-            Lá, os visitantes podem conhecer a história do frevo, assistir a apresentações ao vivo, participar de oficinas e vivenciar essa expressão cultural única</p>
-        </li>
-        <li>
-          <h4>Igreja de Nossa Senhora do Carmo</h4>
-          <p>Outro atrativo nas redondezas é a Igreja de Nossa Senhora do Carmo, construída no século XVIII e considerada obra-prima do barroco pernambucano.
-            Além da fachada suntuosa e do interior ricamente ornado, a igreja guarda obras de arte sacra inestimáveis em seu acervo.</p>
-        </li>
-        <li>
-          <h4>Museus</h4>
-          <p>Você também pode aprender um pouco mais da história local em um dos museus da região.
-            Esse é o caso do Museu Cais do Sertão, do Museu da Cidade do Recife, da Casa de Cultura de Pernambuco, do Instituto Ricardo Brennand e muitos outros.</p>
-        </li>
-      </ul>
+        <div class="card">
+          <img src="img/mojito.jpg" alt="" />
+          <h1>Mojito</h1>
+          <p>
+            40ml de rum branco<br />
+            1 colher de chá de açúcar<br />
+            Folhas de hortelã<br />
+            Gelo a gosto<br />
+            Água com gás.
+          </p>
+          <span>R$ 5,58</span>
+          <button>Adicionar ao carrinho</button>
+          
+        </div>
+        
+        <div class="card">
+            <img src="img/mojito.jpg" alt="" />
+            <h1>Mojito</h1>
+            <p>
+              40ml de rum branco<br />
+              1 colher de chá de açúcar<br />
+              Folhas de hortelã<br />
+              Gelo a gosto<br />
+              Água com gás.
+            </p>
+            <span>R$ 5,58</span>
+            <button>Adicionar ao carrinho</button>
+            
+          </div>
 
-      <small>Fonte: <a href="https://www.passagenspromo.com.br/blog/marco-zero-recife-o-ponto-de-partida-para-a-historia-da-cidade/">https://www.passagenspromo.com.br/blog/marco-zero-recife-o-ponto-de-partida-para-a-historia-da-cidade/</a></small>
-    </section>
-  </main>
-  <footer>
-    <ul>
-      <li>Facebook</li>
-      <li>Instagram</li>
-    </ul>
-  </footer>
-</body>
+          <div class="card">
+            <img src="img/mojito.jpg" alt="" />
+            <h1>Mojito</h1>
+            <p>
+              40ml de rum branco<br />
+              1 colher de chá de açúcar<br />
+              Folhas de hortelã<br />
+              Gelo a gosto<br />
+              Água com gás.
+            </p>
+            <span>R$ 5,58</span>
+            <button>Adicionar ao carrinho</button>
+            
+          </div>
+      </div>
+
+      <hr />
+      <!--  deixei hr para dividir as opções -->
+
+      <h1>Cervejas</h1>
+
+      <div class="row">
+
+
+        <div class="card">
+          <img src="img/mojito.jpg" alt="" />
+          <h1>Mojito</h1>
+          <p>
+            40ml de rum branco<br />
+            1 colher de chá de açúcar<br />
+            Folhas de hortelã<br />
+            Gelo a gosto<br />
+            Água com gás.
+          </p>
+          <span>R$ 5,58</span>
+          <button>Adicionar ao carrinho</button>
+          
+        </div>
+        
+        <div class="card">
+            <img src="img/mojito.jpg" alt="" />
+            <h1>Mojito</h1>
+            <p>
+              40ml de rum branco<br />
+              1 colher de chá de açúcar<br />
+              Folhas de hortelã<br />
+              Gelo a gosto<br />
+              Água com gás.
+            </p>
+            <span>R$ 5,58</span>
+            <button>Adicionar ao carrinho</button>
+            
+          </div>
+
+          <div class="card">
+            <img src="img/mojito.jpg" alt="" />
+            <h1>Mojito</h1>
+            <p>
+              40ml de rum branco<br />
+              1 colher de chá de açúcar<br />
+              Folhas de hortelã<br />
+              Gelo a gosto<br />
+              Água com gás.
+            </p>
+            <span>R$ 5,58</span>
+            <button>Adicionar ao carrinho</button>
+            
+          </div>
+      </div>
+
+      <h1>Tequilas</h1>
+
+      <div class="row">
+
+
+        <div class="card">
+          <img src="img/mojito.jpg" alt="" />
+          <h1>Mojito</h1>
+          <p>
+            40ml de rum branco<br />
+            1 colher de chá de açúcar<br />
+            Folhas de hortelã<br />
+            Gelo a gosto<br />
+            Água com gás.
+          </p>
+          <span>R$ 5,58</span>
+          <button>Adicionar ao carrinho</button>
+          
+        </div>
+        
+        <div class="card">
+            <img src="img/mojito.jpg" alt="" />
+            <h1>Mojito</h1>
+            <p>
+              40ml de rum branco<br />
+              1 colher de chá de açúcar<br />
+              Folhas de hortelã<br />
+              Gelo a gosto<br />
+              Água com gás.
+            </p>
+            <span>R$ 5,58</span>
+            <button>Adicionar ao carrinho</button>
+            
+          </div>
+
+          <div class="card">
+            <img src="img/mojito.jpg" alt="" />
+            <h1>Mojito</h1>
+            <p>
+              40ml de rum branco<br />
+              1 colher de chá de açúcar<br />
+              Folhas de hortelã<br />
+              Gelo a gosto<br />
+              Água com gás.
+            </p>
+            <span>R$ 5,58</span>
+            <button>Adicionar ao carrinho</button>
+            
+          </div>
+      </div>
+
+      <hr />
+
+      <h1>Destilados</h1>
+
+      <div class="row">
+
+
+        <div class="card">
+          <img src="img/mojito.jpg" alt="" />
+          <h1>Mojito</h1>
+          <p>
+            40ml de rum branco<br />
+            1 colher de chá de açúcar<br />
+            Folhas de hortelã<br />
+            Gelo a gosto<br />
+            Água com gás.
+          </p>
+          <span>R$ 5,58</span>
+          <button>Adicionar ao carrinho</button>
+          
+        </div>
+        
+        <div class="card">
+            <img src="img/mojito.jpg" alt="" />
+            <h1>Mojito</h1>
+            <p>
+              40ml de rum branco<br />
+              1 colher de chá de açúcar<br />
+              Folhas de hortelã<br />
+              Gelo a gosto<br />
+              Água com gás.
+            </p>
+            <span>R$ 5,58</span>
+            <button>Adicionar ao carrinho</button>
+            
+          </div>
+
+          <div class="card">
+            <img src="img/mojito.jpg" alt="" />
+            <h1>Mojito</h1>
+            <p>
+              40ml de rum branco<br />
+              1 colher de chá de açúcar<br />
+              Folhas de hortelã<br />
+              Gelo a gosto<br />
+              Água com gás.
+            </p>
+            <span>R$ 5,58</span>
+            <button>Adicionar ao carrinho</button>
+            
+          </div>
+      </div>
+
+      <hr />
+
+      <h1>não alcóolico</h1>
+
+      <div class="row">
+
+
+        <div class="card">
+          <img src="img/mojito.jpg" alt="" />
+          <h1>Mojito</h1>
+          <p>
+            40ml de rum branco<br />
+            1 colher de chá de açúcar<br />
+            Folhas de hortelã<br />
+            Gelo a gosto<br />
+            Água com gás.
+          </p>
+          <span>R$ 5,58</span>
+          <button>Adicionar ao carrinho</button>
+          
+        </div>
+        
+        <div class="card">
+            <img src="img/mojito.jpg" alt="" />
+            <h1>Mojito</h1>
+            <p>
+              40ml de rum branco<br />
+              1 colher de chá de açúcar<br />
+              Folhas de hortelã<br />
+              Gelo a gosto<br />
+              Água com gás.
+            </p>
+            <span>R$ 5,58</span>
+            <button>Adicionar ao carrinho</button>
+            
+          </div>
+
+          <div class="card">
+            <img src="img/mojito.jpg" alt="" />
+            <h1>Mojito</h1>
+            <p>
+              40ml de rum branco<br />
+              1 colher de chá de açúcar<br />
+              Folhas de hortelã<br />
+              Gelo a gosto<br />
+              Água com gás.
+            </p>
+            <span>R$ 5,58</span>
+            <button>Adicionar ao carrinho</button>
+            
+          </div>
+      </div>
+      <hr />
+    </main>
+  </body>
 </html>

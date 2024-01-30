@@ -1,0 +1,49 @@
+flex-start: os itens são alinhados ao lado esquerdo do contêiner.
+flex-end: os itens são alinhados ao lado direito do contêiner.
+center: os itens são alinhados no centro do contêiner.
+space-between: Os itens são exibidos com espaçamento igual entre eles.
+space-around: os itens são exibidos com espaçamento igual ao seu redor.
+Por exemplo, justify-content: flex-end;moverá o sapo para a direita.
+
+
+flex-start: os itens são alinhados à parte superior do contêiner.
+flex-end: os itens são alinhados à parte inferior do contêiner.
+center: os itens são alinhados no centro vertical do contêiner.
+baseline: os itens são exibidos na linha de base do contêiner.
+stretch: os itens são esticados para caber no contêiner.
+
+Os sapos precisam ficar na mesma ordem que seus nenúfares usando flex-direction. Esta propriedade CSS define a direção em que os itens são colocados no contêiner e aceita os seguintes valores:
+
+row: os itens são colocados na mesma direção do texto.
+row-reverse: os itens são colocados na direção oposta à do texto.
+column: Os itens são colocados de cima para baixo.
+column-reverse: Os itens são colocados de baixo para cima.
+
+
+Às vezes, reverter a ordem das linhas ou colunas de um contêiner não é suficiente. Nestes casos, podemos aplicar a orderpropriedade a itens individuais. Por padrão, os itens têm o valor 0, mas podemos usar esta propriedade para defini-lo também como um valor inteiro positivo ou negativo (-2, -1, 0, 1, 2).
+
+Use a orderpropriedade para reordenar os sapos de acordo com seus nenúfares.
+
+Outra propriedade que você pode aplicar a itens individuais é align-self. Esta propriedade aceita os mesmos valores align-itemse seu valor para o item específico.
+
+Oh não! Os sapos estão todos espremidos em uma única fileira de nenúfares. Distribua-os usando a flex-wrappropriedade, que aceita os seguintes valores:
+
+nowrap: Cada item cabe em uma única linha.
+wrap: os itens são agrupados em linhas adicionais.
+wrap-reverse: os itens são contornados em linhas adicionais ao contrário.
+
+As duas propriedades flex-directione flex-wrapsão usadas juntas com tanta frequência que a propriedade abreviada flex-flowfoi criada para combiná-las. Esta propriedade abreviada aceita o valor das duas propriedades separadas por um espaço.
+
+Por exemplo, você pode usar flex-flow: row wrappara definir linhas e envolvê-las.
+
+Tente usar flex-flowpara repetir o nível anterior.
+
+As rãs estão espalhadas por todo o lago, mas os nenúfares estão agrupados no topo. Você pode usar align-contentpara definir como as várias linhas são espaçadas umas das outras. Esta propriedade assume os seguintes valores:
+
+flex-start: As linhas são embaladas na parte superior do contêiner.
+flex-end: As linhas são embaladas no fundo do contêiner.
+center: As linhas são embaladas no centro vertical do contêiner.
+space-between: As linhas são exibidas com espaçamento igual entre elas.
+space-around: As linhas são exibidas com espaçamento igual ao seu redor.
+stretch: As linhas são esticadas para caber no contêiner.
+Isso pode ser confuso, mas align-contentdetermina o espaçamento entre as linhas, ao mesmo tempo align-itemsque determina como os itens como um todo são alinhados dentro do contêiner. Quando há apenas uma linha, align-contentnão tem efeito.

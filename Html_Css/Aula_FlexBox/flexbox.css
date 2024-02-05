@@ -18,11 +18,11 @@
 body {
   display: flex;
   font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
   flex-direction: column;
   justify-content: space-between;
   /* align-items: flex-end; */
   height: 100vh;
+  width: 100vw;
 }
 
 a {
@@ -53,10 +53,13 @@ nav{
   justify-content: space-between;
   align-items: center;
 
+  font-family: 'Bebas Neue', sans-serif;
+
   background-color:var(--nav-bg-color) ;
   color: var(--nav-text-color);
   height: 6rem;
 
+  
   padding: 0 2.4rem;
 }
 nav3{
@@ -64,6 +67,8 @@ nav3{
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+
+  font-family: 'Honk', system-ui;
 
   background-color:var(--nav-bg-color) ;
   color: var(--nav-text-color);
@@ -75,6 +80,9 @@ nav4{
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-family: 'Honk', system-ui;
+  /* font-size: 5rem; */
 
   background-color:var(--nav-bg-color) ;
   color: var(--nav-text-color);
@@ -89,5 +97,8 @@ ul{
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 3rem; /* 1 rem é o equivalente a 10 pixels */
+  gap: 3rem; /* REM    - Unidade de medida relativa ao “elemento root”, ou o elemento html. 
+                  Ambos tem como padrão o valor 16px, ou seja, 1rem equivale a 16px, 0.5rem 
+                  equivale a 8px, 2rem equivale a 32px, e assim por diante */
+                  
 }

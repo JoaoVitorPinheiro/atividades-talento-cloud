@@ -11,6 +11,9 @@ elementoA.innerHTML =`
 let elementoP = document.querySelector("#descricao")
 elementoP.innerHTML = `<p>Smartphone Xiaomi POCO X6 5G 8GB+256GB Global Version NFC Snapdragon 7s Gen 2 Smartphone 120Hz FIow AMOLED 64MP Triple Camera With OIS (Black)</p>
 `
+let elementospan = document.querySelector("#preco")
+elementospan.innerHTML = `<span>R$:1896</span> `
+
 console.log(elementoH1)
 console.log(elementoH1.innerText)
 
@@ -25,4 +28,6 @@ console.log(elementoP)
 console.log(elementoP.innerText)
 console.log(elementoP.innerHTML)
 
-
+console.log(elementospan)
+console.log(elementospan.innerText)
+console.log(elementospan.innerHTML)

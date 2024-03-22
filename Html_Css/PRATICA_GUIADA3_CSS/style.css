@@ -1,0 +1,23 @@
+h1 {
+    color: blueviolet;
+    background-color: blue;
+
+}
+
+div {
+    background-color: lightblue;
+    margin-left: 45px;
+    margin-top: 45px;
+    padding-bottom: 10px ;
+    border: solid black 8px;
+
+}
+
+p {
+    background-color: cadetblue;
+}
+
+body {
+    background-color: aqua;
+    
+}
